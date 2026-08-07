@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-en="Case Studies | Super Mali Studio">品牌案例 | 超急马力工作室</title>
+<meta name="description" content="超急马力工作室品牌案例——王者荣耀盛典、剧场音乐会、音乐综艺、当代艺术等30+案例。">
+<meta name="theme-color" content="#08090d">
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="cursorCanvas" aria-hidden="true"></canvas>
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="超急马力工作室首页"><span class="brand-mark"><img class="brand-logo" src="images/logo.png" alt="超急马力工作室"></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="主导航"><a href="index.html" data-en="Home">首页</a>
+      <a href="about.html" data-en="Brand Story">品牌故事</a>
+      <a href="services.html" data-en="Services">主营业务</a>
+      <a href="works.html" class="active" data-en="Case Studies">品牌案例</a>
+      <a href="milestones.html" data-en="Milestones">品牌事件</a>
+      <a href="contact.html" data-en="Contact">联系我们</a></nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="切换语言">EN</button>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="hero-bg" aria-hidden="true"><span class="glow g1"></span><span class="glow g2"></span></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html" data-en="Home">首页</a><span class="sep">/</span><span data-en="Case Studies">品牌案例</span></div>
+    <span class="eyebrow">CASE STUDIES</span>
+    <h1 data-en="Case Studies">品牌案例</h1>
+    <p class="lead" data-en="Browse our representative cases by business pillar — every case has a complete story.">按业务板块浏览我们的代表案例，每个案例都有完整的项目故事。</p>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="filter-tabs reveal"><button class="filter-tab active" data-filter="all" data-en="All">全部</button><button class="filter-tab" data-filter="music" data-en="Live Music">音乐现场</button><button class="filter-tab" data-filter="variety" data-en="Variety Shows">综艺节目</button><button class="filter-tab" data-filter="esports" data-en="Gaming &amp; Esports">游戏电竞</button><button class="filter-tab" data-filter="art" data-en="Contemporary Art">当代艺术</button></div>
+    <p class="lead" id="caseCount" style="margin-bottom:24px" data-en="22 cases">22 个案例</p>
+    <div class="case-grid"><a class="case-card reveal" href="works/wangzhe-anniversary.html" data-cat="esports">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/wangzhe-anniversary.jpg" alt="王者荣耀周年庆盛典系列" loading="lazy"><span class="case-tag" data-en="Gaming &amp; Esports · 2018–2025">游戏电竞 · 2018–2025</span></div>
+  <div class="case-body">
+    <h3 data-en="Honor of Kings Anniversary Galas">王者荣耀周年庆盛典系列</h3>
+    <p data-en="From the 3rd to the 10th anniversary — producing HOK anniversary galas and &#x27;Co-Creation Nights&#x27;.">从三周年到十周年，连续操盘《王者荣耀》周年庆盛典与“共创之夜”。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Tencent Games · Honor of Kings">腾讯游戏 · 王者荣耀</span><span class="meta-chip" data-en="Grand Gala · Full Production">大型盛典 · 全案制作</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/kpl-awards.html" data-cat="esports">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/kpl-awards.jpg" alt="KPL 王者荣耀年度颁奖礼" loading="lazy"><span class="case-tag" data-en="Gaming &amp; Esports · 2019–2025">游戏电竞 · 2019–2025</span></div>
+  <div class="case-body">
+    <h3 data-en="KPL Honor of Kings Annual Awards">KPL 王者荣耀年度颁奖礼</h3>
+    <p data-en="From the Winter Champions Cup Reunion to the Summit Night — celebrating KPL glory.">从《冬季冠军杯团聚夜》到《巅峰之夜》，见证 KPL 荣誉时刻。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="KPL · Honor of Kings Pro League">KPL 王者荣耀职业联赛</span><span class="meta-chip" data-en="Esports Gala · Full Production">电竞盛典 · 全案制作</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/kic-final.html" data-cat="esports">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/kic-final.jpg" alt="KIC 王者荣耀世界冠军杯中场秀" loading="lazy"><span class="case-tag" data-en="Gaming &amp; Esports · 2019 起">游戏电竞 · 2019 起</span></div>
+  <div class="case-body">
+    <h3 data-en="KIC Honor of Kings World Champions Cup Halftime Show">KIC 王者荣耀世界冠军杯中场秀</h3>
+    <p data-en="A halftime stage built around the World Champions Cup, bringing game culture to the arena.">围绕世界冠军杯赛事打造中场秀舞台，让游戏文化在竞技场燃起来。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="KIC · HOK World Champions Cup">KIC 王者荣耀世界冠军杯</span><span class="meta-chip" data-en="Esports Stage · Halftime Show">电竞舞台 · 中场秀</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/genshin-concert.html" data-cat="esports">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/genshin-concert.jpg" alt="原神 2023 交响音乐会" loading="lazy"><span class="case-tag" data-en="Gaming &amp; Esports · 2023">游戏电竞 · 2023</span></div>
+  <div class="case-body">
+    <h3 data-en="Genshin Impact 2023 Symphony Concert">原神 2023 交响音乐会</h3>
+    <p data-en="A symphony concert built on Genshin&#x27;s music, bringing game melodies to the classical stage.">以原神游戏音乐为核心的交响音乐会，把游戏旋律带上古典舞台。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Genshin Impact">原神</span><span class="meta-chip" data-en="Game Concert · Production">游戏音乐会 · 制作</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/dahua-21.html" data-cat="esports">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/dahua-21.jpg" alt="大话西游2 21周年国风烟花大会" loading="lazy"><span class="case-tag" data-en="Gaming &amp; Esports · 2023">游戏电竞 · 2023</span></div>
+  <div class="case-body">
+    <h3 data-en="Fantasy Westward Journey 2 — 21st Anniversary Guofeng Fireworks Gala">大话西游2 21周年国风烟花大会</h3>
+    <p data-en="A guofeng celebration with fireworks and stage for FWVJ2&#x27;s 21st anniversary.">以国风为底色，用烟花与舞台为大话西游2 21周年庆生。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Fantasy Westward Journey 2">大话西游2</span><span class="meta-chip" data-en="Game Celebration · Full Production">游戏庆典 · 全案制作</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/qq-mobile-night.html" data-cat="esports">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/qq-mobile-night.jpg" alt="QQ手游《华夏狂欢夜》" loading="lazy"><span class="case-tag" data-en="Gaming &amp; Esports · 2018">游戏电竞 · 2018</span></div>
+  <div class="case-body">
+    <h3 data-en="QQ Games &#x27;Chinese Carnival Night&#x27;">QQ手游《华夏狂欢夜》</h3>
+    <p data-en="A large carnival night for QQ Games players, blending gaming interaction with live shows.">面向 QQ 手游玩家的大型狂欢夜，游戏互动与现场演出同台。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="QQ Games">QQ手游</span><span class="meta-chip" data-en="Large Event · Production">大型活动 · 制作</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/tanweiwei-concert.html" data-cat="music">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/tanweiwei-concert.jpg" alt="谭维维《声声世世》风起八方剧场音乐会" loading="lazy"><span class="case-tag" data-en="Live Music · 2025">音乐现场 · 2025</span></div>
+  <div class="case-body">
+    <h3 data-en="Tan Weiwei — &#x27;Sheng Sheng Shi Shi&#x27; Theater Concert">谭维维《声声世世》风起八方剧场音乐会</h3>
+    <p data-en="Inspired by the Classic of Mountains and Seas — selected for the MCT stage arts program.">以《山海经》为灵感的“追风之旅”，入选文旅部舞台艺术创作行动计划。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Theater Concert">剧场音乐会</span><span class="meta-chip" data-en="Directed Work">导演作品</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/wangyuzhi-concert.html" data-cat="music">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/wangyuzhi-concert.jpg" alt="王俞之《锦时花》剧场音乐会" loading="lazy"><span class="case-tag" data-en="Live Music · 2025">音乐现场 · 2025</span></div>
+  <div class="case-body">
+    <h3 data-en="Wang Yuzhi — &#x27;Jin Shi Hua&#x27; Theater Concert">王俞之《锦时花》剧场音乐会</h3>
+    <p data-en="An artist&#x27;s journey told in three chapters: &#x27;Jin&#x27;, &#x27;Shi&#x27; and &#x27;Hua&#x27;.">以音乐生涯为线索，将人生划分为“锦”“时”“花”三个篇章。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Theater Concert">剧场音乐会</span><span class="meta-chip" data-en="Directed Work">导演作品</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/ai-qingchun-night.html" data-cat="music">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/ai-qingchun-night.jpg" alt="2024 无限宠 AI 青春芒果夜" loading="lazy"><span class="case-tag" data-en="Live Music · 2024">音乐现场 · 2024</span></div>
+  <div class="case-body">
+    <h3 data-en="2024 Infinite AI Youth Mango Night">2024 无限宠 AI 青春芒果夜</h3>
+    <p data-en="A nearly 2,000㎡ naked-eye LED stage, creating an immersive &#x27;future-tech AI world&#x27;.">近 2000㎡ 巨型裸眼屏，打造“未来科技 AI 世界”沉浸式音乐盛典。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Hunan TV / Mango TV">湖南卫视 / 芒果TV</span><span class="meta-chip" data-en="Grand Gala · Directed Work">大型晚会 · 导演作品</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/graduation-party.html" data-cat="music">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/graduation-party.jpg" alt="马栏山芒果节 · 不设限毕业礼" loading="lazy"><span class="case-tag" data-en="Live Music · 2023">音乐现场 · 2023</span></div>
+  <div class="case-body">
+    <h3 data-en="Malanshan Mango Festival — Unbounded Graduation Ceremony">马栏山芒果节 · 不设限毕业礼</h3>
+    <p data-en="&#x27;Life is a wilderness, not a track&#x27; — a graduation gala built around &#x27;planting wishes&#x27;.">“人生是旷野，不是轨道”——以“种愿”为核心的毕业季晚会。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Hunan TV / Mango TV">湖南卫视 / 芒果TV</span><span class="meta-chip" data-en="Grand Gala · Directed Work">大型晚会 · 导演作品</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/detective-concerts.html" data-cat="music">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/detective-concerts.jpg" alt="大侦探系列演唱会" loading="lazy"><span class="case-tag" data-en="Live Music · 2022–2026">音乐现场 · 2022–2026</span></div>
+  <div class="case-body">
+    <h3 data-en="Who&#x27;s the Murderer Concert Series">大侦探系列演唱会</h3>
+    <p data-en="From the &#x27;Fantasy Forest&#x27; to &#x27;Ten Years of Detective Hearts&#x27; — turning past highlights into concerts.">从“奇幻森林”到“十年侦心”，把往季名梗做成一场场演唱会。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Mango TV">芒果TV</span><span class="meta-chip" data-en="Large Event · Directed Work">大型活动 · 导演作品</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/xiaomang-zhonghua-night.html" data-cat="music">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/xiaomang-zhonghua-night.jpg" alt="《小芒种花夜》" loading="lazy"><span class="case-tag" data-en="Live Music · 2021">音乐现场 · 2021</span></div>
+  <div class="case-body">
+    <h3 data-en="&#x27;Xiaomang Flower Planting Night&#x27;">《小芒种花夜》</h3>
+    <p data-en="A &#x27;planting flowers&#x27; themed gala embracing homegrown brands, guochao and national heritage.">以“种花”为主题，兼容国货、国潮与国脉三大“国之骄傲”元素。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Hunan TV / Mango TV">湖南卫视 / 芒果TV</span><span class="meta-chip" data-en="Grand Gala · Directed Work">大型晚会 · 导演作品</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/shenma-miaodong-night.html" data-cat="music">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/shenma-miaodong-night.jpg" alt="《神马奇妙夜》" loading="lazy"><span class="case-tag" data-en="Live Music · 2021">音乐现场 · 2021</span></div>
+  <div class="case-body">
+    <h3 data-en="&#x27;Shenma Wonderful Night&#x27;">《神马奇妙夜》</h3>
+    <p data-en="A &#x27;blind-box&#x27; concert for the 99 Shopping Festival: six acts, six styles, six venues.">99 划算节的“盲盒”音乐会：6 组嘉宾，6 种演出风格与场地。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Henan TV / Bilibili / Juhuasuan">河南卫视 / Bilibili / 聚划算</span><span class="meta-chip" data-en="Brand Full Case">品牌全案</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/chenchusheng-record-store.html" data-cat="music">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/chenchusheng-record-store.jpg" alt="陈楚生《忘不了唱片店》线上音乐会" loading="lazy"><span class="case-tag" data-en="Live Music · 2020">音乐现场 · 2020</span></div>
+  <div class="case-body">
+    <h3 data-en="Chen Chusheng — &#x27;Unforgettable Record Store&#x27; Online Concert">陈楚生《忘不了唱片店》线上音乐会</h3>
+    <p data-en="A TME live online concert created with Universal Music.">腾讯音乐娱乐集团与环球音乐携手打造的 TME live 线上音乐会。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="TME live">TME live</span><span class="meta-chip" data-en="Online Concert · Production">线上音乐会 · 制作</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/concert-series.html" data-cat="music">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/concert-series.jpg" alt="演唱会系列" loading="lazy"><span class="case-tag" data-en="Live Music · 2013–2025">音乐现场 · 2013–2025</span></div>
+  <div class="case-body">
+    <h3 data-en="Concert Series">演唱会系列</h3>
+    <p data-en="From a stadium-scale show to national tours — witnessing live music highlights.">从工体场万人演唱会到全国巡回演唱会，见证现场的高光时刻。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Multiple venues &amp; platforms">多平台 · 多场地</span><span class="meta-chip" data-en="Concert Production">演唱会制作</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/chengfeng-polang-2.html" data-cat="variety">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/chengfeng-polang-2.jpg" alt="《乘风破浪的姐姐2》" loading="lazy"><span class="case-tag" data-en="Variety Shows · 2021">综艺节目 · 2021</span></div>
+  <div class="case-body">
+    <h3 data-en="&#x27;Sisters Who Make Waves 2&#x27;">《乘风破浪的姐姐2》</h3>
+    <p data-en="Contributing to the phenomenon-level female competition show.">参与现象级女性竞演综艺的策划制作，见证姐姐们的舞台表达。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Hunan TV / Mango TV">湖南卫视 / 芒果TV</span><span class="meta-chip" data-en="Variety Production · Creative Contribution">综艺制作 · 参与策划</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/zhire-de-wo-men.html" data-cat="variety">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/zhire-de-wo-men.jpg" alt="《炙热的我们》" loading="lazy"><span class="case-tag" data-en="Variety Shows · 2020">综艺节目 · 2020</span></div>
+  <div class="case-body">
+    <h3 data-en="&#x27;The Burning Us&#x27;">《炙热的我们》</h3>
+    <p data-en="A music-group competition show, crafting scorching stages for performing groups.">音乐团体竞演节目，为舞台团体打造炙热现场。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Tencent Video">腾讯视频</span><span class="meta-chip" data-en="Music Variety · Production">音乐综艺 · 制作</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/variety-classics.html" data-cat="variety">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/variety-classics.jpg" alt="音乐综艺经典系列" loading="lazy"><span class="case-tag" data-en="Variety Shows · 2013–2018">综艺节目 · 2013–2018</span></div>
+  <div class="case-body">
+    <h3 data-en="Music Variety Classics Series">音乐综艺经典系列</h3>
+    <p data-en="From talent shows to music interaction and trend competitions — constantly breaking new ground.">从选秀到音乐互动，从方言音乐到潮流竞演，持续打破玩法。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Multiple platforms">多平台</span><span class="meta-chip" data-en="Variety Production">综艺制作</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/fang-lijun.html" data-cat="art">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/fang-lijun.jpg" alt="方力钧《艺术教育探索》" loading="lazy"><span class="case-tag" data-en="Contemporary Art · 2021">当代艺术 · 2021</span></div>
+  <div class="case-body">
+    <h3 data-en="Fang Lijun — &#x27;Art Education Exploration&#x27;">方力钧《艺术教育探索》</h3>
+    <p data-en="The studio&#x27;s first art documentary — a milestone from music events to art events.">公司首部文艺纪录片，从音乐事件迈向文艺事件的重要突破。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="2021 China-UK Contemporary Art Showcase">2021 中英当代文艺展演</span><span class="meta-chip" data-en="Art Event · Documentary">文艺事件 · 纪录片</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/zhongguo-jiujing.html" data-cat="art">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/zhongguo-jiujing.jpg" alt="《中国酒经》当代艺术展" loading="lazy"><span class="case-tag" data-en="Contemporary Art · 2025">当代艺术 · 2025</span></div>
+  <div class="case-body">
+    <h3 data-en="&#x27;The Classic of Chinese Wine&#x27; Contemporary Art Exhibition">《中国酒经》当代艺术展</h3>
+    <p data-en="Reinterpreting the cultural essence of Chinese baijiu through contemporary art.">以当代艺术为媒，重新诠释中国白酒的文化内核。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Contemporary Art Exhibition">当代艺术展</span><span class="meta-chip" data-en="Art Event · Curation">文艺事件 · 艺术策展</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/lyrics-copyright.html" data-cat="art">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/lyrics-copyright.jpg" alt="精品版权 · 八十首词作全案代理" loading="lazy"><span class="case-tag" data-en="Contemporary Art · 长期合作">当代艺术 · 长期合作</span></div>
+  <div class="case-body">
+    <h3 data-en="Premium Copyrights · Full Agency for 80 Song Lyrics">精品版权 · 八十首词作全案代理</h3>
+    <p data-en="Full copyright agency for renowned lyricist Yu Jiang&#x27;s 80 songs, covering many national hits.">著名作词人喻江八十首词作品全案代理，覆盖多首国民金曲。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Song Lyric Copyright">词作品版权</span><span class="meta-chip" data-en="Premium Copyright Agency">精品版权代理</span></div>
+  </div>
+</a>
+<a class="case-card reveal" href="works/tanweiwei-artist.html" data-cat="art">
+  <div class="case-cover" style="background:#17171c"><img class="cover-img" src="images/tanweiwei-artist.jpg" alt="合作艺人 · 谭维维 IP 打造" loading="lazy"><span class="case-tag" data-en="Contemporary Art · 长期合作">当代艺术 · 长期合作</span></div>
+  <div class="case-body">
+    <h3 data-en="Artist Collaboration · Tan Weiwei IP Building">合作艺人 · 谭维维 IP 打造</h3>
+    <p data-en="Artist image packaging and IP building — a long-term companion on stage and beyond.">艺人形象包装与 IP 打造，从舞台到企划的长期陪伴。</p>
+    <div class="case-meta"><span class="meta-chip" data-en="Artist Collaboration">艺人合作</span><span class="meta-chip" data-en="Artist Packaging &amp; IP Building">艺人形象包装与 IP 打造</span></div>
+  </div>
+</a>
+</div>
+  </div>
+</section>
+
+<section class="section alt"><div class="container"><div class="cta-band reveal">
+  <h3 data-en="Want a case like this for your brand?">也想打造这样的案例？</h3>
+  <p data-en="Whether it&#x27;s a grand gala, music variety, gaming &amp; esports or contemporary art, we&#x27;d love to hear from you.">无论是大型晚会、音乐综艺、游戏电竞还是当代艺术项目，欢迎和我们聊聊。</p>
+  <a class="btn btn-primary" href="contact.html" data-en="Contact Us">联系我们</a>
+</div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <img class="footer-logo" src="images/logo.png" alt="超急马力工作室">
+    <p class="tagline" data-en="Full-throttle passion is what youth means.">马力沸腾，才是青春</p>
+    <div class="footer-links"><a href="index.html" data-en="Home">首页</a><a href="about.html" data-en="Brand Story">品牌故事</a><a href="services.html" data-en="Services">主营业务</a><a href="works.html" data-en="Case Studies">品牌案例</a><a href="milestones.html" data-en="Milestones">品牌事件</a><a href="contact.html" data-en="Contact">联系我们</a></div>
+    <p class="contact-line" data-en="Email: supermali@lightup-media.com ｜ Address: 湖南省长沙市开福区马栏山长房视谷中心">合作邮箱：supermali@lightup-media.com ｜ 地址：湖南省长沙市开福区马栏山长房视谷中心</p>
+    <p class="copyright" data-en="© &lt;span id=&quot;year&quot;&gt;&lt;/span&gt; Super Mali Studio · 湖南马力文化传媒有限公司">© <span id="year"></span> 超急马力工作室 · 湖南马力文化传媒有限公司</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
